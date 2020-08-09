@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPS game</title>
+    <link rel="icon" href="https://img.icons8.com/color/48/000000/hand.png">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Rock, paper and scissors game</h1>
+        </header>
+        <div class="main">
+            <div class="card_gamer">
+                <h2>Gamer</h2>
+                <p>Choose an option</p>
+                <img id="rock" src="https://img.icons8.com/color/48/000000/hand-rock.png"/>
+                <img id="paper" src="https://img.icons8.com/color/48/000000/hand.png"/>
+                <img id="scissor" src="https://img.icons8.com/color/48/000000/hand-scissors.png"/>
+            </div>
+            <div class="card_computer">
+                <h2>Computer</h2>
+                <div id="computer">
+                    <img id="paper" src="https://img.icons8.com/color/48/000000/hand.png"/>
+                </div>
+            </div>
+            <div id="winner"></div>
+            <h1>Gamer VS Computer</h1>
+            <div class="result">
+                <div class="gamer">
+                    <label id="count-gamer">0</label>
+                </div>
+                <div class="computer">
+                    <label id="count-gamer">0</label>
+                </div>
+            </div>
+        </div>
+        <footer></footer>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

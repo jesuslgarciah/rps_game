@@ -2,6 +2,9 @@ const rock = document.getElementById("rock")
 const paper = document.getElementById("paper")
 const scissor = document.getElementById("scissor")
 
+let gamer = 0
+let computer = 0
+
 rock.addEventListener("click", () => {
     main("rock")
 })
@@ -25,30 +28,36 @@ function main(option){
                 break
             case "paper":
                 printMessageWinner("Computer wins")
+                increase("computer")
                 break
             case "scissor":
                 printMessageWinner("You win")
+                increase("gamer")
                 break
         }
     }else if (option === "paper"){
         switch (computerHand){
             case "rock":
                 printMessageWinner("You win")
+                increase("gamer")
                 break
             case "paper":
                 printMessageWinner("No one wins")
                 break
             case "scissor":
                 printMessageWinner("Computer wins")
+                increase("computer")
                 break
         }
     }else if(option === "scissor"){
         switch (computerHand){
             case "rock":
                 printMessageWinner("Computer wins")
+                increase("computer")
                 break
             case "paper":
                 printMessageWinner("You win")
+                increase("gamer")
                 break
             case "scissor":
                 printMessageWinner("No one wins")
@@ -78,5 +87,16 @@ function randomHand(){
         case 3:
             image_computer.innerHTML = (scissor)
             return "scissor"
+    }
+}
+
+function increase(winner) {
+    if (winner == "gamer"){
+        const countGamer = document.getElementById('count-gamer')
+        countGamer.innerHTML = ++gamer
+    }
+    else if (winner == "computer"){
+        const countGamer = document.getElementById('count-computer')
+        countGamer.innerHTML = ++computer
     }
 }

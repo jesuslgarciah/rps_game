@@ -6,39 +6,61 @@
     <title>RPS game</title>
     <link rel="icon" href="https://img.icons8.com/color/48/000000/hand.png">
     <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;300&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Rock, paper and scissors game</h1>
-        </header>
-        <div class="main">
-            <div class="card_gamer">
-                <h2>Gamer</h2>
-                <p>Choose an option</p>
-                <img id="rock" src="https://img.icons8.com/color/48/000000/hand-rock.png"/>
-                <img id="paper" src="https://img.icons8.com/color/48/000000/hand.png"/>
-                <img id="scissor" src="https://img.icons8.com/color/48/000000/hand-scissors.png"/>
-            </div>
-            <div class="card_computer">
-                <h2>Computer</h2>
-                <div id="computer">
-                    <img id="paper" src="https://img.icons8.com/color/48/000000/hand.png"/>
-                </div>
-            </div>
-            <div id="winner"></div>
-            <h1>Gamer VS Computer</h1>
-            <div class="result">
-                <div class="gamer">
-                    <label id="count-gamer">0</label>
-                </div>
-                <div class="computer">
-                    <label id="count-computer">0</label>
-                </div>
+    <header>
+        <h1>Rock, paper and scissors game</h1>
+    </header>
+    <section class="main">
+        <div class="card-gamer">
+            <h2>Gamer</h2>
+            <p>Choose an option</p>
+            <img id="rock" src="https://img.icons8.com/color/48/000000/hand-rock.png"/ alt="hand-rock">
+            <img id="paper" src="https://img.icons8.com/color/48/000000/hand.png"/ alt="hand-paper">
+            <img id="scissor" src="https://img.icons8.com/color/48/000000/hand-scissors.png"/ alt="hand-scissor">
+            <p>Your option is:</p>
+            <div id="gamer">
+                <img id="paper" src="https://img.icons8.com/color/48/000000/hand.png"/ alt="hand-gamer">
             </div>
         </div>
-        <footer></footer>
-    </div>
+        <div class="card-computer">
+            <h2>Computer</h2>
+            <p>The random option is:</p>
+            <div id="computer">
+                <img id="paper" src="https://img.icons8.com/color/48/000000/hand.png"/ alt="hand-computer">
+            </div>
+        </div>
+        <div id="winner"></div>
+        <div class="result">
+            <div>
+                <h2>Gamer</h2>
+                <p id="count-gamer">0</p>
+            </div>
+            <div>
+                <h2>Computer</h2>
+                <p id="count-computer">0</p>
+            </div>
+        </div>
+        <div>
+            <button class="finish" id="finish">Finish</button>
+            <button class="restart" id="restart">Restart</button>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>Made with ❤️ by <strong>@jesuslgarciah</strong></p>
+        <a href="https://github.com/jesuslgarciah" target="_blank">
+            <img src="https://img.icons8.com/material-rounded/24/000000/github.png" alt="github"/>
+        </a>
+        <a href="https://twitter.com/jesuslgarciah" target="_blank">
+            <img src="https://img.icons8.com/material-rounded/24/000000/twitter.png" alt="twitter"/>
+        </a>
+        <a href="https://instagram.com/jesuslgarciah" target="_blank">
+            <img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png"/ alt="instagram">
+        </a>
+    </footer>
     <script src="index.js"></script>
 </body>
 </html>

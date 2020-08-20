@@ -1,24 +1,61 @@
 body{
     padding: 0;
     margin: 0;
-    height: 100vh;
-    font-style: 'serif';
-    display: flex;
-    justify-content: center;
+    font-family: 'Poppins';
     text-align: center;
 }
 
-
-.result{
-    display: flex;
-    justify-content: space-around;
+p{
+    margin: 0;
+    font-weight: 300;
 }
 
-.result label{
+h1{
     font-size: 30px;
     font-weight: bold;
 }
 
-#winner label{
+h2{
+    font-size: 22px;
+}
+
+.result{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.result div{
+    /*margin: 0 20px;*/
+    width: 180px;
+}
+
+#winner p{
     color: red;   
+    font-weight: 510;
+}
+
+.result p{
+    font-size: 22px;
+    font-weight: 510;
+}
+
+button{
+    font-size: 15px;
+    font-weight: 300;
+    background: transparent;
+    margin: 35px 15px;
+    width: 130px;
+    height: 40px;
+    border: 1px solid black;
+    border-radius: 30px;
+    outline: none;
+}
+
+button:hover{
+    cursor: pointer;
+}
+
+.hidden{
+    visibility: hidden;
 }
